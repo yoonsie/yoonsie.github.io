@@ -1,0 +1,235 @@
+html {
+  overflow-y: scroll;
+}
+
+
+* {
+   font-family: Segoe UI;
+}
+
+
+body {
+  padding: 0;
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
+
+div.container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+p.centered {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#who-i-am {
+  font-weight: bold;
+}
+
+div.about, div.resume {
+  padding-top: 20px;
+}
+
+#hello-world{
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: .6em;
+}
+
+/* Navigation Bar */
+.navigation-bar   {
+	width: 100%;
+}
+
+.navigation-bar ul   {
+	padding: 0px;
+	margin: 0px;
+  text-align:center;
+}
+.navigation-bar li    {
+	list-style-type: none;
+	padding: 0px;
+	height: 24px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+  display:inline;
+
+}
+.navigation-bar li a    {
+	font-size: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 5px;
+	padding-right: 1em;
+	padding-left: 1em;
+	line-height: 2em;
+	margin-right: 16px;
+}
+.navigation-bar li:first-child {
+	margin-left:20px;
+  font-style: normal;
+}
+
+span.link {
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+a:hover {
+    color:#0652DD;
+}
+span.link:hover {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  color:#0652DD;
+}
+.text-highlight span {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+a, a:visited{
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* Resume */
+div.resume {
+  padding: 10px;
+  margin: 10px;
+}
+div.resume h3 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+hr {
+  margin: 0;
+  border-top: 1px solid #000;
+}
+
+.resume p, ul {
+  margin: 0;
+}
+
+.section-details {
+  margin-top: .2em;
+  margin-bottom: 10px;
+}
+
+span.title{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span.company, span.work-project {
+  font-size: .9em;
+  font-style: italic;
+}
+
+span.location {
+  color: gray;
+}
+span.date {
+  float: right;
+}
+
+.skill-type {
+  font-weight: 500;
+}
+
+
+.downloadResume {
+  float: right;
+  z-index: 10;
+  transition: all 0.3s ease 0s;
+}
+.downloadResume button {
+  background: none;
+  padding: 5px;
+  margin: 20 0;
+  outline: none;
+  border: 1px solid #000;
+}
+
+.downloadResume:hover {
+  box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/* Fun */
+div.fun {
+  padding-top: 2em;
+  max-width: 1080px;
+  width: 60%;
+  margin: 0 auto;
+}
+img.icon {
+  height: 25px;
+  padding-right: 10px;
+}
+
+span.recommendation-type {
+  font-weight: 500;
+}
+div.fun ul {
+  padding-top: 5px;
+  margin: 0;
+}
+div.icon, div.recommendation-list {
+  display: inline-block;
+}
+
+div.recommendation-list {
+  float: right;
+}
+
+
+
+
+
+
+
+/* SVG Graphics  */
+div.skyline {
+  width: 100%;
+  height: 80%;
+  padding-top: 2em;
+  vertical-align: middle;
+}
+.st0{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  -moz-animation: dash 1s linear forwards;
+  animation: dash 1s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: .5em;
+  margin: 0 auto;
+}
