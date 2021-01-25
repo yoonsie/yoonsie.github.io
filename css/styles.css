@@ -82,12 +82,12 @@ span.link {
   padding-bottom: .1em;
 }
 a:hover {
-    color:#0652DD;
+    color:#58B19F;
 }
 span.link:hover {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  color:#0652DD;
+  color:#58B19F;
 }
 .text-highlight span {
   border-top: 1px solid #000;
@@ -170,11 +170,13 @@ span.date {
 
 /* Fun */
 div.fun {
+  display: block;
   padding-top: 2em;
   max-width: 1080px;
   width: 60%;
   margin: 0 auto;
 }
+
 img.icon {
   height: 25px;
   padding-right: 10px;
@@ -228,8 +230,60 @@ div.skyline {
 }
 
 .footer {
-  position: absolute;
-  bottom: 10px;
-  font-size: .5em;
+  position:fixed;
+   bottom:0;
+   left:0;
+  font-size: .6em;
+}
+
+
+/************* Blog ***************/
+div.blog {
+  padding-top: 2em;
+  max-width: 1080px;
+  width: 80%;
   margin: 0 auto;
+}
+
+
+div.blog .entry {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+
+}
+
+.entry-link {
+  cursor: pointer;
+}
+
+.entry {
+  padding: 1em;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.entry:selected {
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.entry-post svg {
+  display: block;
+   /* padding-left: 25%; */
+}
+.entry-last-updated {
+  float: right;
+  margin-left: 10px;
+}
+
+img.wireframe-gif {
+  height: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
