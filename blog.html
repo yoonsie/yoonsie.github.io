@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Yoonsie Kim | Blog</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
@@ -13,10 +14,10 @@
     <div class="navigation-bar">
         <div id="navigation-container" class="cf">
           <ul>
-          <li><a href="index.html"><span class="link">Home</span></a></li>
-          <li><a href="resume.html"><span class="link">Resume</span></a></li>
-          <li><a href="blog.html" class="text-highlight"><span class="link">Blog</span></a></li>
-          <li><a href="contact.html"><span class="link">Contact</span></a></li>
+          <li><a href="index"><span class="link">Home</span></a></li>
+          <li><a href="resume"><span class="link">Resume</span></a></li>
+          <li><a href="blog" class="text-highlight"><span class="link">Blog</span></a></li>
+          <li><a href="contact"><span class="link">Contact</span></a></li>
           </ul>
         </div>
       </div>
@@ -24,18 +25,224 @@
     <div class="blog">
       <div class="entry">
         <div class="entry-title">
-          <h2><a class="entry-link">Fitness accountability mobile application (issho)</a></h2> <span class="entry-last-updated">2020-01-24</span>
+          <h2><a class="entry-link">Fitness accountability mobile application (issho)</a></h2>
+          <span class="entry-last-updated">
+            <div class="tooltip"><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span class="tooltiptext">Last Updated</span></div> 2020-01-25</span>
           <div class="entry-subheading">Case study, exploring full product lifecycle from interviews, scoping personas, features, workflows, wireframes, mockups and prototypes</div>
         </div>
         <div class="entry-post hidden">
+          <h3>Idea</h3>
+          <p>Like many others, the workout habits I had finally established were completely undone due to the global pandemic. I personally am someone who benefits greatly from having accountability partners, especially when it comes to exercise. I don't know why but I find it so difficult to start  (or restart) a new exercise habit by myself. To address this personal pain point and also the global blocker preventing people from meeting in-person at the gym, I wanted to explore the idea of a fitness accountability app.</p>
+          <p>And so, I did what any product manager would do - I started researching! After being unable to find an existing mobile app that would address my pain points, I decided it was worth exploring this idea even further and interviewed potential users.</p>
+          <h3>Personas</h3>
+          <p>After my interviews, I was able to construct some personas of different types of users based on the patterns I was seeing.</p>
+          <div class="persona">
+            <h4><i class="fa fa-user" aria-hidden="true"></i>Norah No-exercise</h4>
+            <ul>
+              <li>Does not currently exercise regularly but wants to</li>
+              <li>Main blocker is making the time to prioritize workouts</li>
+            </ul>
+            <table>
+              <th>
+                Criteria
+                <td class="mark">1</td>
+                <td class="mark">2</td>
+                <td class="mark">3</td>
+                <td class="mark">4</td>
+                <td class="mark">5</td>
+              </th>
+              <tr>
+                <td class="criteria">I exercise regularly*</td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I want to exercise regularly</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I am satisfied with my current exercise routine</td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria"> When I exercise, I use apps to workout (e.g. YouTube, WiiFit)</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I prefer working out with someone versus alone</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I had an exercise routine before COVID-19</td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+            </table>
+            *Regulary means they work out consistently, the same amount of times every week
+          </div>
+          <!-- Preston  -->
+          <div class="persona">
+            <h4><i class="fa fa-user" aria-hidden="true"></i>Preston Pre-Pandemic</h4>
+            <ul>
+              <li>Used to exercise regularly pre-pandemic, but rarely exercises now</li>
+              <li>Used to exercise primarly at a gym</li>
+              <li>Enjoyed class workout programs and passes like ClassPass</li>
+              <li>Finds it harder to exercise now</li>
+            </ul>
+            <table>
+              <th>
+                Criteria
+                <td class="mark">1</td>
+                <td class="mark">2</td>
+                <td class="mark">3</td>
+                <td class="mark">4</td>
+                <td class="mark">5</td>
+              </th>
+              <tr>
+                <td class="criteria">I exercise regularly</td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I want to exercise regularly</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I am satisfied with my current exercise routine</td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria"> When I exercise, I use apps to workout (e.g. YouTube, WiiFit)</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I prefer working out with someone versus alone</td>
+
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I had an exercise routine before COVID-19</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+
+              </tr>
+            </table>
+            *Regulary means they work out consistently, the same amount of times every week
+          </div>
+
+          <div class="persona">
+            <h4><i class="fa fa-user" aria-hidden="true"></i>Ned Next-Level</h4>
+            <ul>
+              <li>Exercises regularly but wants to add to their current routine (e.g. aerobic or anaerobic exercises)</li>
+              <li>Is able to consistently exercise without a fitness partner, but finds that they push themselves harder when they exercise with someone</li>
+            </ul>
+            <table>
+              <th>
+                Criteria
+                <td class="mark">1</td>
+                <td class="mark">2</td>
+                <td class="mark">3</td>
+                <td class="mark">4</td>
+                <td class="mark">5</td>
+              </th>
+              <tr>
+                <td class="criteria">I exercise regularly</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I want to exercise regularly</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+              </tr>
+              <tr>
+                <td class="criteria">I am satisfied with my current exercise routine</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria"> When I exercise, I use apps to workout (e.g. YouTube, WiiFit)</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I prefer working out with someone versus alone</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+                <td class="mark"></td>
+              </tr>
+              <tr>
+                <td class="criteria">I had an exercise routine before COVID-19</td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark"></td>
+                <td class="mark">x</td>
+
+              </tr>
+            </table>
+            *Regulary means they work out consistently, the same amount of times every week
+          </div>
           <h3>Wireframe Demo</h3>
           <p><img class="wireframe-gif" src="assets/issho_wireframes_demo.gif"></p>
-          <!-- <h3>Interviews</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <h3>Personas</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-
           <h3>Workflows</h3>
             <p><strong>Launch workout session from a notification</strong>. This workflow assumes:
               <ul>
@@ -96,7 +303,7 @@
         // } else {
         //   x.style.display = "none";
         // }
-      } 
+      }
       document.getElementById("date").innerHTML = String(new Date().getFullYear());
       console.log(String(new Date().getFullYear()));
     </script>
