@@ -10293,3 +10293,10 @@ form .row:first-child .floating-label-form-group {
 .project-info {
   max-width: 750px;
 }
+
+/* mint green color bullets */
+#about-bullets {
+  color: #AAF0D1;
+  font-size: 1.5rem;
+  letter-spacing: 1em;
+}
