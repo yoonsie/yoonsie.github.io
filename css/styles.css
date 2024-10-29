@@ -4,7 +4,7 @@ html {
     background-color: #fff;
 }
 body {
-    margin: 40px;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
+    margin: 40px 20px;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
     max-width: 650px;
     padding: 0 10px;
     font: 1.2rem Arial, sans-serif;
