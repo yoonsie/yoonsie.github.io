@@ -4,14 +4,13 @@ html {
     background-color: #fff;
 }
 body {
-    margin: 40px auto;
+    margin: 40px;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
     max-width: 650px;
     padding: 0 10px;
     font: 1.2rem Arial, sans-serif;
     letter-spacing: 0.25px;
     color: #000;
     /* text-transform: lowercase; */
-
 }
 /* ===================== Navigation Bar ==================== */
 @media (max-width: 350px) {
@@ -20,7 +19,6 @@ body {
   .main a, .nav a {line-height: 1.5;}
   .main {margin-top: 2rem;}
 }
-
 /* Navigation bar menu item styling */
 div.nav-item {
   display: inline-block;
@@ -45,16 +43,16 @@ div.nav-item {
 
 /* ===================== Main section  ==================== */
 /* Main section in body */
-.main {
+div.main {
   margin-top: 3rem;
-      line-height: 1.5;
+  line-height: 1.5;
 }
 /* ===================== Hyperlinks ==================== */
-.main a {
+div.main a {
   color: black;
   text-underline-position: under;
 }
-.main a:hover {
+div.main a:hover {
   color: #914a63;
 }
 /* ===================== Lists ==================== */
@@ -63,31 +61,8 @@ ul {
   padding: 0;
   margin: 0;
 }
- .list a:visited {
-   color: #c2ab78;
- }
-/* ===================== Breadcrumbs ==================== */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
+.list a:visited {
+ color: #c2ab78;
 }
 /* ===================== Text Decorations ==================== */
 /* Bold */
