@@ -1,0 +1,103 @@
+/* ===================== Page Styling ==================== */
+html {
+    display: block;
+    background-color: #fff;
+}
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    padding: 0 10px;
+    font: 1.2rem Arial, sans-serif;
+    letter-spacing: 0.25px;
+    color: #000;
+    /* text-transform: lowercase; */
+
+}
+/* ===================== Navigation Bar ==================== */
+@media (max-width: 350px) {
+  .nav-item {display: block !important; width: 100%;}
+  .nav-item a{padding: 4px 60% 4px 40%;}
+  .main a, .nav a {line-height: 1.5;}
+  .main {margin-top: 2rem;}
+}
+
+/* Navigation bar menu item styling */
+div.nav-item {
+  display: inline-block;
+  font-size: 24px;
+}
+/* Nav bar links are BOXED */
+.nav-item a{
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 3px 6px;
+}
+.nav-item a:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+/* Current nav bar item ID */
+.nav-item #current {
+  color: #fff;
+  background-color: #000;
+}
+
+/* ===================== Main section  ==================== */
+/* Main section in body */
+.main {
+  margin-top: 3rem;
+      line-height: 1.5;
+}
+/* ===================== Hyperlinks ==================== */
+.main a {
+  color: black;
+  text-underline-position: under;
+}
+.main a:hover {
+  color: #914a63;
+}
+/* ===================== Lists ==================== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ .list a:visited {
+   color: #c2ab78;
+ }
+/* ===================== Breadcrumbs ==================== */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/* ===================== Text Decorations ==================== */
+/* Bold */
+span.strong {
+ font-weight: bold;
+}
+
+/* Highlight */
+span.hello {
+   font-weight: bold;
+   color: #000;
+   background-color: #FFDC74;
+ }
