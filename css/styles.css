@@ -4,8 +4,8 @@ html {
     background-color: #fff;
 }
 body {
-    margin: 40px 20px;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
-    max-width: 650px;
+    margin: 40px auto;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
+    max-width: 750px;
     padding: 0 10px;
     font: 1.2rem Arial, sans-serif;
     letter-spacing: 0.25px;
@@ -18,14 +18,14 @@ p::selection {
   background: #FFDC74;
 }
 p::-moz-selection {
-  background: #fff2a8;
+  background: #FFDC74;
 }
 
 span::selection {
   background: #FFDC74;
 }
 span::-moz-selection {
-  background: #fff2a8;
+  background: #FFDC74;
 }
 
 a::selection {
@@ -35,6 +35,14 @@ a::selection {
 a::-moz-selection {
   background: #914a63;
   color: #fff;
+}
+
+li::selection {
+  background: #FFDC74;
+}
+
+li::-moz-selection {
+  background: #FFDC74;
 }
 /* ===================== Navigation Bar ==================== */
 @media (max-width: 350px) {
