@@ -12,6 +12,30 @@ body {
     color: #000;
     /* text-transform: lowercase; */
 }
+
+/* Highlight or text selection color */
+p::selection {
+  background: #FFDC74;
+}
+p::-moz-selection {
+  background: #fff2a8;
+}
+
+span::selection {
+  background: #FFDC74;
+}
+span::-moz-selection {
+  background: #fff2a8;
+}
+
+a::selection {
+  background: #914a63;
+  color: #fff;
+}
+a::-moz-selection {
+  background: #914a63;
+  color: #fff;
+}
 /* ===================== Navigation Bar ==================== */
 @media (max-width: 350px) {
   .nav-item {display: block !important; width: 100%;}
@@ -70,7 +94,7 @@ span.strong {
  font-weight: bold;
 }
 
-/* Highlight */
+/* Highlighter */
 span.hello {
    font-weight: bold;
    color: #000;
