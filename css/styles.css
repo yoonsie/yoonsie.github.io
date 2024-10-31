@@ -44,6 +44,14 @@ li::selection {
 li::-moz-selection {
   background: #FFDC74;
 }
+/* ===================== Superscript ==================== */
+sup {
+  font-size: 0.9rem;
+  vertical-align: super;
+}
+sup a {
+    text-decoration: none;
+}
 /* ===================== Navigation Bar ==================== */
 @media (max-width: 350px) {
   .nav-item {display: block !important; width: 100%;}
