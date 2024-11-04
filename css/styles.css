@@ -22,7 +22,7 @@ p::-moz-selection {
 }
 
 span::selection {
-  text-background: #FFDC74;
+  background-color: #FFDC74;
 }
 span::-moz-selection {
   background-color: #FFDC74;
