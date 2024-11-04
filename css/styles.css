@@ -13,37 +13,6 @@ body {
     /* text-transform: lowercase; */
 }
 
-/* Highlight or text selection color */
-p::selection {
-  background-color: #FFDC74;
-}
-p::-moz-selection {
-  background-color: #FFDC74;
-}
-
-span::selection {
-  background-color: #FFDC74;
-}
-span::-moz-selection {
-  background-color: #FFDC74;
-}
-
-a::selection {
-  background-color: #914a63;
-  color: #fff;
-}
-a::-moz-selection {
-  background-color: #914a63;
-  color: #fff;
-}
-
-li::selection {
-  background-color: #FFDC74;
-}
-
-li::-moz-selection {
-  background-color: #FFDC74;
-}
 /* ===================== Superscript ==================== */
 sup {
   font-size: 0.9rem;
@@ -115,5 +84,36 @@ span.strong {
 span.hello {
    font-weight: bold;
    color: #000;
+   background-color: #FFDC74;
+ }
+ /* Highlight or text selection color */
+ p::selection {
+   background-color: #FFDC74;
+ }
+ p::-moz-selection {
+   background-color: #FFDC74;
+ }
+
+ span::selection {
+   background-color: #FFDC74;
+ }
+ span::-moz-selection {
+   background-color: #FFDC74;
+ }
+
+ a::selection {
+   background-color: #914a63;
+   color: #fff;
+ }
+ a::-moz-selection {
+   background-color: #914a63;
+   color: #fff;
+ }
+
+ li::selection {
+   background-color: #FFDC74;
+ }
+
+ li::-moz-selection {
    background-color: #FFDC74;
  }
