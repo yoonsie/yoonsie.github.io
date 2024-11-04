@@ -15,34 +15,34 @@ body {
 
 /* Highlight or text selection color */
 p::selection {
-  background: #FFDC74;
+  background-color: #FFDC74;
 }
 p::-moz-selection {
-  background: #FFDC74;
+  background-color: #FFDC74;
 }
 
 span::selection {
-  background: #FFDC74;
+  text-background: #FFDC74;
 }
 span::-moz-selection {
-  background: #FFDC74;
+  background-color: #FFDC74;
 }
 
 a::selection {
-  background: #914a63;
+  background-color: #914a63;
   color: #fff;
 }
 a::-moz-selection {
-  background: #914a63;
+  background-color: #914a63;
   color: #fff;
 }
 
 li::selection {
-  background: #FFDC74;
+  background-color: #FFDC74;
 }
 
 li::-moz-selection {
-  background: #FFDC74;
+  background-color: #FFDC74;
 }
 /* ===================== Superscript ==================== */
 sup {
