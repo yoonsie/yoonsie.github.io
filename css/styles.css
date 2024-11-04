@@ -92,6 +92,7 @@ div.main a {
   color: black;
   text-underline-position: under;
 }
+
 div.main a:hover {
   color: #914a63;
 }
