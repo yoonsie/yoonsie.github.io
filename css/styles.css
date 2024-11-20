@@ -74,8 +74,12 @@ ul {
 p.blog-h2 {
   color: #95a5a6;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
+p.blog {
+  margin-top: 0;
+}
 ol.blog, ul.blog {
   margin-top: 0;
 }
@@ -89,6 +93,15 @@ ul.list {
 ul.list a:visited {
  color: #c2ab78;
 }
+
+/* ===================== SVG ==================== */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* ===================== Text Decorations ==================== */
 /* Bold */
 span.strong {
