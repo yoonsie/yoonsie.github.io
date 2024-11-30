@@ -30,7 +30,18 @@ sup {
 sup a {
     text-decoration: none;
 }
+/* ===================== Header Image ==================== */
+img#lofi-me {
+  margin: 1rem auto;
+  display: block;
+}
 /* ===================== Navigation Bar ==================== */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 @media (max-width: 350px) {
   .nav-item {display: block !important; width: 100%;}
   .nav-item a{padding: 4px 60% 4px 40%;}
@@ -41,7 +52,9 @@ sup a {
 div.nav-item {
   display: inline-block;
   font-size: 24px;
+  margin: 0 1px;
 }
+
 /* Nav bar links are BOXED */
 .nav-item a{
   color: inherit;
