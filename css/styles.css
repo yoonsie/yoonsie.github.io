@@ -22,6 +22,7 @@ svg {
 }
 
 
+
 /* ===================== Superscript ==================== */
 sup {
   font-size: 0.9rem;
@@ -158,4 +159,9 @@ span.hello {
 
  li::-moz-selection {
    background-color: #FFDC74;
+ }
+
+ img{
+   margin: 0 auto;
+   display: block;
  }
