@@ -161,6 +161,11 @@ span.hello {
    background-color: #FFDC74;
  }
 
+ div.center {
+  width: 100%; /* Or a specific width, like 80% */
+  text-align: center; /* This ensures the img will be centered if it's inline-block */
+}
+
  img {
    margin: 0 auto;
    display: block;
