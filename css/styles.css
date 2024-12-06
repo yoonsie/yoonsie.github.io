@@ -2,9 +2,11 @@
 html {
     display: block;
     background-color: #fff;
+
 }
 body {
     margin: 40px auto;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
+    /* width: 100%; */
     max-width: 750px;
     padding: 0 10px;
     font: 1.2rem Arial, sans-serif;
@@ -174,3 +176,27 @@ span.hello {
  span.emoji {
    padding-right: 5px;
  }
+
+/* Footer */
+footer {
+  position: fixed;        /* Fix the footer at the bottom of the viewport */
+  bottom: 0;              /* Stick it to the bottom of the page */
+  left: 0;                /* Align it to the left edge */
+  width: 100%;            /* Full width */
+  text-align: center;     /* Center the content inside */
+  background: #fff;       /* White background */
+  color: #333;            /* Text color */
+  line-height: 30px;      /* Vertically align text */
+  font-size: 10px;        /* Adjust font size for better desktop view */
+  padding: 0;             /* No padding */
+  margin: 0;              /* No margin */
+  letter-spacing: 0.25px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 10px;    /* Adjust font size for smaller screens */
+    line-height: 30px;     /* Ensure vertical centering on mobile */
+
+  }
+}
