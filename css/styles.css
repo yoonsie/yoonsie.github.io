@@ -170,3 +170,7 @@ span.hello {
    margin: 0 auto;
    display: block;
  }
+
+ span.emoji {
+   padding-right: 5px;
+ }
