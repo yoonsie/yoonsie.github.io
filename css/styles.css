@@ -126,6 +126,10 @@ span.strong {
  font-weight: bold;
 }
 
+span.italicize {
+  font-style: italic;
+}
+
 /* Highlighter */
 span.hello {
    font-weight: bold;
