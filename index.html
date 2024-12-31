@@ -32,13 +32,27 @@
         <div class="main">
           <p class="center"><span class="hello">Hello, world.</span></p>
           <p>You've found my small space on the world wide web. Neat!</p>
+          <p>My name is Yoonsie <a href="javascript:void(0);" onclick="playAudio()"><i class="fa fa-volume-up fa-2xs" aria-hidden="true"></i></a>
+            <!-- Hidden audio element -->
+            <audio id="myAudio">
+              <source src="assets/audio/Yoonsie.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+          I am deeply passionate about the intersection of <br> Technology, Health, and Learning.</p>
           <p>Here is the latest copy of my <a href="assets/docs/Yoonsie_Kim_Resume.pdf" target="_blank" rel="noopener noreferrer">resume.pdf <i class="fa fa-external-link fa-2xs" aria-hidden="true"></i></a></p>
           <p>You can also find me on <a href="https://www.linkedin.com/in/yoonsiekim" target="_blank" rel="noopener noreferrer">Linkedin <i class="fa fa-external-link fa-2xs" aria-hidden="true"></i></a></p>
         </div>
 
         <footer>&copy; <span id="copyright-year"></span> Yoonsie Kim. All rights reserved.</footer>
         <script>
+          // JavaScript function to play audio when the link is clicked
+          function playAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+          }
+
           document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
         </script>
     </body>
 </html>
