@@ -120,6 +120,10 @@ ul.list a:visited {
  color: #c2ab78;
 }
 
+ul.list a:visited:hover {
+  color: #914a63
+}
+
 /* ===================== Text Decorations ==================== */
 /* Bold */
 span.strong {
