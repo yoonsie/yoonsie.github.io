@@ -209,3 +209,13 @@ footer {
 
   }
 }
+
+/* ===================== Webring code textarea ==================== */
+#webring-button {
+  padding: 3px 2px;
+}
+
+p.top-caption {
+  margin: 0px;
+  padding: 0px;
+}
