@@ -4,6 +4,7 @@ html {
     background-color: #fff;
 
 }
+
 body {
     margin: 40px auto;/* used to have 40px auto and removed auto bc causes changes when multiple p elements*/
     /* width: 100%; */
