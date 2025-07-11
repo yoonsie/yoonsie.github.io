@@ -220,3 +220,11 @@ p.top-caption {
   margin: 0px;
   padding: 0px;
 }
+
+
+/* ===================== /play page, emoji list ==================== */
+.emoji {
+display: inline-block;
+width: 1.5em;       /* Adjust based on desired spacing */
+text-align: center; /* Center the emoji within the span */
+}
